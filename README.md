@@ -19,11 +19,11 @@
   <p align="center">
     An awesome & simple HTML template 
     <br />
-    <a href="">View Demo</a>
+    <a href="https://ham47mani.github.io/Web-Design-v1/">View Demo</a>
     ·
-    <a href="">Report Bug</a>
+    <a href="https://github.com/Ham47Mani/Web-Design-v1/issues">Report Bug</a>
     ·
-    <a href="">Request Feature</a>
+    <a href="https://github.com/Ham47Mani/Web-Design-v1/issues">Request Feature</a>
   </p>
 </p>
 
