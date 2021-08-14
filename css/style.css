@@ -1,0 +1,568 @@
+/* 
+ * Template Name      : Template 1
+ * Template Version   : V 1.0.0
+ * Template Url       : ...
+ * Language           : HTML5, CSS3, jQuery 
+ * Contact Me : Skaype   :- Boudraa.Hamani
+ *				Facebook :- Ham mani
+ *				Email    :- Ham47mani@gmail.com
+ */
+
+/*============= Start Main Rules =============*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container { width: 80%; margin: auto }
+h1 , h2 ,h3 ,h4 , h5 , h6 { color: #566465}
+p { color: #969696; line-height: 1.6 }
+.clearfix { clear: both }
+/*============= End Main Rules =============*/
+
+/*============= Start Header =============*/
+header {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+	color: #FFF;
+	padding-top: 180px;
+	opacity:0.7;
+	background-image: url('../img/slider.jpg');
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	    -ms-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out
+}
+header:hover { opacity: 1 }
+header h1 {
+    color: #FFF;
+	margin: 10px auto;
+	font-size: 60px;
+	width: 750px;
+	border-top: 4px solid #FFF;
+	border-bottom: 4px solid #FFF;
+	padding: 10px 0
+}
+header button {
+	background: none;
+	margin-top: 40px;
+	font-size: 40px;
+	font-weight: bold;
+	border: 2px solid #FFF;
+	padding: 10px 30px;
+}
+header .fa-angle-double-down {
+    display: block;
+    position: absolute;
+    left: calc(50% - 20px);
+    font-size: 80px;
+	margin-top: 70px;
+    cursor: pointer;
+    z-index: 1;
+	-webkit-animation : graw .5s infinite ease-in-out;
+	   -moz-animation : graw .5s infinite ease-in-out;
+	     -o-animation : graw .5s infinite ease-in-out;
+	        animation : graw .5s infinite ease-in-out
+}
+
+@-webkit-keyframes graw { from{-webkit-transform:scale(1)} to{-webkit-transform:scale(1.5)} }
+@-moz-keyframes graw { from{-moz-transform:scale(1)} to{-moz-transform:scale(1.5)} }
+@-o-keyframes graw { from{-o-transform:scale(1)} to{-o-transform:scale(1.5)} }
+@keyframes graw { from{transform:scale(1)} to{transform:scale(1.5)} }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    header { padding-top: 80px }
+    header h1 { font-size: 30px; width: 100% }
+    header button { font-size: 20px; margin-top: 20px }
+    header .fa-angle-double-down { margin-top: 0; bottom: 30px; font-size: 40px }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    header { padding-top: 80px }
+    header h1 { font-size: 40px; width: 100% }
+    header button { font-size: 30px; margin-top: 20px }
+    header .fa-angle-double-down { margin-top: 0; bottom: 30px; font-size: 50px }
+}
+
+/* ===> Medium Screen <===-*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/* ===> Large Screen <===-*/
+@media (min-width: 1200px){}
+
+/*============= End Header =============*/
+
+/*============= Start Navbar =============*/
+nav { background: #252F31; color: #FFF; overflow: hidden }
+nav .container { position: relative }
+
+/*--- Brand ---*/
+nav .brand { float: left }
+nav .brand .fa-h-square { margin: 20px 5px 0 0; font-size: 25px }
+nav .brand h2 { display: inline-block; color: #FFF; text-transform:uppercase }
+nav .brand h2 span { color: #9B59B6 }
+
+nav i.fa { cursor: pointer; display: none }
+
+/*---Ul list ---*/
+nav .list { float: right }
+nav .list ul { list-style: none }
+nav ul li { display: inline-block; padding: 10px }
+nav ul li a { 
+    text-decoration: none; 
+    color: #FFF; 
+    font-size: 18px; 
+    font-weight: bold; 
+    display: block;
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+nav ul li:hover a, nav ul li.active a { color: #9B59B6 }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    nav { overflow: inherit }
+    nav.fixedMenu { position: fixed; top: 0; left: 0; width: 100%; z-index: 2 }
+    nav .brand { float: none }
+    nav i.fa { display: block; position: absolute; top: 20px; right: 0 }
+    nav .list { 
+        float: none;
+        display: none;
+        position: relative;
+        top: 0px;
+        background: #252F31;
+        z-index: 2;
+        border-top: 1px solid #FFF;
+        overflow: hidden
+    }
+    nav ul { padding: 0; margin: 0 }
+    nav ul li { display: block; padding: 0 }
+    nav ul li a { padding: 10px 5px }
+    nav ul li:hover a, nav ul li.active a { color: #9B59B6; background: #FFF; padding-left: 20px }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    nav { overflow: inherit }
+    nav.fixedMenu { position: fixed; top: 0; left: 0; width: 100%; z-index: 2 }
+    nav .brand { float: none }
+    nav i.fa { display: block; position: absolute; top: 20px; right: 0 }
+    nav .list { 
+        float: none;
+        display: none;
+        position: relative;
+        top: 0px;
+        background: #252F31;
+        z-index: 2;
+        border-top: 1px solid #FFF;
+        overflow: hidden
+    }
+    nav ul { padding: 0; margin: 0 }
+    nav ul li { display: block; padding: 0 }
+    nav ul li a { padding: 10px 5px }
+    nav ul li:hover a, nav ul li.active a { color: #9B59B6; background: #FFF; padding-left: 20px }
+}
+
+/* ===> Medium Screen <===-*/
+@media (min-width: 992px) and (max-width: 1199px){
+    nav .list ul { margin-left: 0; padding-left: 0 }
+    nav ul li a { font-size: 16px }
+}
+
+/* ===> Large Screen <===-*/
+@media (min-width: 1200px){}
+/*============= End Navbar =============*/
+
+/*============= Start Section =============*/
+section { overflow: hidden; padding-top: 40px; padding-bottom: 50px }
+section .features { width: calc(96% / 3) ; float: left }
+section .features:not(:last-child) { margin-right: 2% }
+section .features h2 {text-transform: uppercase}
+section .features p { text-align: justify}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    section .features { width: 100% ; float: none; text-align: center }
+    section .features:not(:last-child) { margin-right: 0% }
+    section .features p { text-align: center }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    section .features { width: 100% ; float: none; text-align: center }
+    section .features:not(:last-child) { margin-right: 0% }
+    section .features p { text-align: center }
+}
+
+/* ===> Medium Screen <===-*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/* ===> Large Screen <===-*/
+@media (min-width: 1200px){}
+/*============= End Section =============*/
+
+/*============= Start About Me =============*/
+.About-Me { background-color: #F2F2F2; overflow: hidden	}
+
+/*--- Image ---*/
+.About-Me img { float: left; width: 40% }
+
+/*--- Info ---*/
+.About-Me .info { float: left; width:60%; padding: 25px }
+.About-Me .info h2 { text-transform: uppercase; margin: 20px 0 20px 40px }
+.About-Me .info > p { margin: 0 0 20px 40px }
+.About-Me .info > p:last-of-type { margin-top: 20px }
+.About-Me .info  .hobbies { margin: 10px 0 0 30px; overflow: hidden }
+.About-Me .info  .hobbies div { float: left; width: 48%; margin-right: 1% }
+.About-Me .info  .hobbies div .fa {
+    float: left;
+	display: block;
+	font-size: 40px;
+	color: #9B59B6
+}
+.About-Me .info  .hobbies > div .text { float: left }
+.About-Me .info  .hobbies div span { width: 10%; margin-top: 35px; margin-right:4% }
+.About-Me .info  .hobbies div .text { width: 80%; margin-left: 5% }
+.About-Me .info  .hobbies div .text p { margin-top: 0; margin-bottom:0 }
+.About-Me .info .hobbies div h3 { text-transform: uppercase; margin-bottom: 5px }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .About-Me img { float: none; width: 100% }
+    .About-Me .info { float: none; width: 100%; padding: 25px 0 }
+    .About-Me .info { text-align: center }
+    .About-Me .info  .hobbies div { float: none; width: 100%; margin-right: 0; margin-bottom: 20px }
+    /*.About-Me .info  .hobbies div .fa { float: none }*/
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .About-Me img { float: none; width: 100% }
+    .About-Me .info { float: none; width: 100%; padding: 25px 0 }
+    .About-Me .info { text-align: center }
+    .About-Me .info  .hobbies div { margin-bottom: 20px }
+}
+
+/* ===> Medium Screen <===-*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/* ===> Large Screen <===-*/
+@media (min-width: 1200px){}
+/*============= End About Me =============*/
+
+/*============= Start My Skills =============*/
+.my-skills { padding: 30px 0; overflow: hidden }
+.my-skills .container > div { display: flex }
+
+/*--- Skills ---*/
+.my-skills .skills , .my-skills .progress { width: 48%; margin-right:2%; }
+.my-skills .skills h2 { text-transform: uppercase }
+.my-skills .skills p { margin: 20px 40px 30px 0px }
+.my-skills .skills button {
+    background: none;
+	border: 2px solid #9B59B6;
+	color: #9B59B6;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 40px;
+}
+
+/*--- Progress Bar ---*/
+.my-skills .progress h3 { text-transform: uppercase; padding: 10px 0 0; margin-bottom: 5px }
+.my-skills .progress div { padding-bottom: 0; background: #F2F2F2; height:25px }
+.my-skills .progress div span {
+	display: block;
+	height:100%;
+	background-color: #9B59B6;
+	color: #FFF;
+	padding-right: 10px;
+	text-align: right;
+	line-height: 25px;
+	font-weight: bold
+}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .my-skills .container > div { flex-direction: column }
+    .my-skills .skills , .my-skills .progress { width: 100%; margin-right:0; text-align: center}
+    .my-skills .skills p { margin: 20px 10px }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .my-skills .container > div { flex-direction: column }
+    .my-skills .skills , .my-skills .progress { width: 100%; margin-right:0; text-align: center}
+    .my-skills .skills p { margin: 20px 10px }
+}
+
+/* ===> Medium Screen <===-*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+/* ===> Large Screen <===-*/
+@media (min-width: 1200px){}
+/*============= End My Skills =============*/
+
+/*============= Start Resume =============*/
+.resume {
+	position: relative;
+	background-color: #F2F2F2;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	text-align: center
+}
+.resume:after {
+	content: "";
+	display: block;
+	width: 0;
+	position:absolute;
+	bottom: -18px;
+	right: 50%;
+	overflow:hidden;
+	border-width: 	18px 18px 0 18px;
+	border-style: solid;
+	border-color: #F2F2F2 transparent
+}
+.resume  p { margin-bottom: 40px }
+.resume  h2 { text-transform: uppercase }
+.resume button {
+    background: none;
+	border: 2px solid #9B59B6;
+	color: #9B59B6;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 40px;
+}
+/*============= End Resume =============*/
+
+/*============= Start Education =============*/
+.my-education { padding-top: 60px; overflow: hidden }
+
+/*--> Main Content <--*/
+.my-education .container .main { float: left; width: 50%; margin-right:5% }
+
+/*--> Exp Content <--*/
+.my-education .container .exp { float: left; width: 45% }
+.my-education .container .exp h3:first-child { margin-top: 66px }
+.my-education .container .exp h3 { text-transform: uppercase; margin-top: 50px; margin-bottom: 5px }
+.my-education .container .exp span {
+	color: #ABABAB;
+	display: block;
+	padding: 7px 0
+}
+.my-education .container .exp span:nth-of-type(2) ,
+.my-education .container .exp span:nth-of-type(4) ,
+.my-education .container .exp span:last-of-type {
+	background-color: #9B59B6;
+	padding: 4px 8px;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold
+}
+.my-education .container .exp hr { margin: 20px 0; background: #CCC; height: 1px; border: 0 }
+.my-education .container .exp p:last-of-type { margin-bottom: 55px }
+.my-education .container hr { margin: 20px 0; background: #CCC; height: 2px; border: 0 }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .my-education .container .main { float: none; width: 100%; margin-right:0; text-align: center }
+    .my-education .container .exp { float: none; width: 100% }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .my-education .container .main { float: none; width: 100%; margin-right:0; text-align: center }
+    .my-education .container .exp { float: none; width: 100% }
+}
+/*============= End Education =============*/
+
+/*============= Start Testimonials =============*/
+.testimonials { background: #F2F2F2; padding-top: 70px; padding-bottom: 50px; text-align: center }
+.testimonials q {
+	color: #969696;
+	font-family: 'Indie Flower', cursive;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.6
+}
+.testimonials h3 { text-transform: uppercase; padding-bottom: 25px; padding-top: 25px }
+.testimonials ul { 	list-style: none; padding-left: 10px; text-align: center }
+.testimonials ul  li {
+	width: 2%;
+	height: 20px;
+	border: 2px solid #9B59B6;
+	border-radius: 50%;
+	display: inline-block
+}
+.testimonials ul .active , .testimonials ul  li:hover { background-color: #9B59B6; cursor: pointer }
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .testimonials ul li { width: 20px }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .testimonials ul li { width: 20px }
+}
+/*============= End Testimonials =============*/
+
+/*============= Start Portfolios =============*/
+.portfolio { padding-top: 50px; padding-bottom: 70px; text-align: center }
+.portfolio .container h2 { text-transform: uppercase }
+.portfolio .container p { margin: 0 50px }
+
+/*--> Our Work <--*/
+.portfolio .container .our-work { overflow: hidden; margin-top: 30px }
+.portfolio .container .our-work > div { float: left; width:33.3333% }
+.portfolio .container .our-work > div  img {
+	width: 92%;
+	margin: 10px;
+	padding: 3px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 50%;
+	opacity: .7;
+	-webkit-box-shadow: 10px 10px 15px #CCC;
+	   -moz-box-shadow: 10px 10px 15px #CCC;
+	    -ms-box-shadow: 10px 10px 15px #CCC;
+	     -o-box-shadow: 10px 10px 15px #CCC;
+	        box-shadow: 10px 10px 15px #CCC;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+	    -ms-transition: all .5s ease-in-out;
+	     -o-transition: all .5s ease-in-out;
+	        transition: all .5s ease-in-out;
+	-webkit-transform: rotateY(-50deg);
+	   -moz-transform: rotateY(-50deg);
+	    -ms-transform: rotateY(-50deg);
+	     -o-transform: rotateY(-50deg);
+	        transform: rotateY(-50deg);
+}
+.portfolio .container .our-work > div:hover  img {
+	opacity: 1;
+	border-radius: 30px;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	    -ms-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transform: translateZ(20px);
+	   -moz-transform: translateZ(20px);
+	    -ms-transform: translateZ(20px);
+	     -o-transform: translateZ(20px);
+		    transform: translateZ(20px)
+}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .portfolio .container p { margin: 0 }
+    .portfolio .container .our-work > div { float: none; width: 100% }
+}
+
+/* ===> Small Screen <===-*/
+@media (min-width: 768px) and (max-width: 991px){
+    .portfolio .container p { margin: 0 }
+    .portfolio .container .our-work > div { width: 50% }
+}
+/*============= End Portfolios =============*/
+
+/*============= Start Contact Us =============*/
+.contact { background-color: #252F31; padding-top: 50px; padding-bottom: 70px; overflow: hidden }
+
+/*--> Info <--*/
+.contact .info { float: left; width: 50%; margin-right:5% }
+.contact .info  h2 { color: #DFDFDF }
+.contact .info address { color: #909495; line-height: 1.6; padding: 20px 0 }
+.contact .info  b { color: #DFDFDF }
+
+/*--> Form <--*/
+.contact form { float: left; width: 45%; padding-top:50px }
+.contact form label { display: block; margin-top: 10px; margin-bottom: 10px; color: #DFDFDF }
+.contact form label span { color: #909495 }
+.contact form input[type="text"], .contact form input[type="email"], .contact form textarea {
+	background-color: transparent;
+	border: 0;
+	margin-bottom: 20px;
+	padding: 10px;
+	width:100%;
+	color: #FFF
+}
+.contact form input[type="text"], .contact form input[type="email"] { border-bottom: 1px solid #FFF}
+.contact form input:focus { outline: none }
+.contact form textarea { height: 250px; border: 1px solid #FFF; border-radius: 8px }
+.contact form input[type="submit"] {
+	background-color: #191E21;
+	border: 0;
+	padding: 10px 20px;
+	margin-top:20px;
+	font-weight: bold;
+	color: #FFF
+}
+
+/* ===> Smart Phones And Tablet <===-*/
+@media (max-width: 767px){
+    .contact .info { float: none; width: 100%; margin-right: 0 }
+    .contact .info  p, .contact .info  address, .contact .info  h2 { text-align: center}
+    .contact form { float: none; width: 100%; padding-top: 30px }
+    .contact form input[type="submit"] { width: 100%; padding: 15px 20px }
+}
+/*============= End Contact Us =============*/
+
+/*============= Start Footer =============*/
+footer {
+	background-color: #191E21;
+	color: #909495;
+	padding: 10px 0;
+	text-align: center
+}
+footer h5 { text-transform: uppercase; margin-bottom: 10px }
+footer .fa { font-size: 25px; padding-left: 5px; margin-bottom: 10px }
+footer .fa:hover { color: #FFF }
+/*============= End Footer =============*/
+
+/*---- Start My Fonts ----*/
+
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v8/10JVD_humAd5zP2yrFqw6nhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+/*---- End My Fonts ----*/
+
+/*============= Start Effects =============*/
+.contact form .input-effect { position: relative }
+.contact form .input-effect label { position: absolute; top: 0; left: 10px; z-index: 1 }
+.contact form .input-effect input { position: relative; z-index: 2 }
+
+/*--> Effect 2 <--*/
+.contact form .input-effect2 label { margin-top: 0; margin-bottom: 0; top: 10px }
+.contact form .input-effect2 input {
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+.contact form .input-effect2 input:focus { border: 1px solid #FFF }
+/*============= End Effects =============*/
